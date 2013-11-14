@@ -1,0 +1,23 @@
+<body>
+  <div>
+    In Chrome, clicking the elseToIf button inexplicably reduces the space between the buttons.
+  </div>
+  <div>
+    {{#if xOne}}
+      {{> yesButton}} {{> yesButton}}
+    {{else}}
+      {{> yesButton}} {{> yesButton}}
+    {{/if}}
+  </div>
+  <div>
+    <button id="one">elseToIf</button>
+    <button id="two">ifToElse</button>
+  </div>
+  <div>
+    {{x}}
+  </div>
+</body>
+
+<template name="yesButton">
+  <button>there</button>
+</template>
